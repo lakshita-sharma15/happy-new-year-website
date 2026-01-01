@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #2b2f3a, #0e1016);
+  height: 100vh;
+  overflow: hidden;
+  color: #f5d88c;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 100vh;
+  padding: 60px;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+}
+
+/* FORCE FONT */
+.happy {
+  font-family: 'Tagesschrift', cursive !important;
+  font-size: 100px;
+  color: gold;
+}
+
+
+
+.wish {
+    font-family: 'Tagesschrift', cursive !important;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #ddd;
+}
+
+.dev {
+    font-family: 'Tagesschrift', cursive !important;
+  margin-top: 25px;
+  font-size: 18px;
+  color: #ffeb3b;
+}
+
+/* BUTTON */
+.start-btn {
+   
+  margin-top: 30px;
+  padding: 14px 28px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(45deg, #d4af37, #ffeb3b);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.start-btn:hover {
+  transform: translateX(5px);
+  box-shadow: 0 0 20px #ffeb3b;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+}
+
+.year {
+  font-size: 180px;
+  font-weight: 700;
+  position: relative;
+}
+
+.two {
+  opacity: 0.15;
+}
+
+.five {
+  position: absolute;
+  right: -80px;
+  animation: down 2s forwards;
+}
+
+.six {
+  position: absolute;
+  right: -80px;
+  opacity: 0;
+  animation: up 2s forwards;
+  animation-delay: 2s;
+  color: #f5d88c;
+}
+
+@keyframes down {
+  to { transform: translateY(200px); opacity: 0; }
+}
+
+@keyframes up {
+  to { transform: translateY(-20px); opacity: 1; }
+}
+
+/* PAGE SLIDE */
+@keyframes slideOut {
+  to { transform: translateX(-100%); opacity: 0; }
+}

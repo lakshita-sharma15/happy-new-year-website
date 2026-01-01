@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My 2026 Goals</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Goals CSS -->
+  <link rel="stylesheet" href="goals.css" />
+</head>
+
+<body>
+<div class="login-box">
+  <header>
+    <h1>🎯 My 2026 Goals</h1>
+    <p>Small steps every day ✨</p>
+    <div id="countdown"></div>
+  </header>
+
+  <!-- GOAL INPUT -->
+  <section class="goal-section">
+    <input type="text" id="goalInput" placeholder="Write your goal..." />
+
+    <select id="category">
+      <option value="Career">Career</option>
+      <option value="Study">Study</option>
+      <option value="Health">Health</option>
+      <option value="Personal">Personal</option>
+    </select>
+
+    <button onclick="addGoal()">Save Goal</button>
+    <button class="clear" onclick="clearGoals()">Clear All</button>
+  </section>
+
+  <!-- GOALS LIST -->
+  <section class="goals" id="goalList"></section>
+
+  <!-- QUOTES -->
+  <section class="quote">
+    <p id="quoteText"></p>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Lakshita Sharma</p>
+  </footer>
+</div>
+  <!-- JS -->
+  <script src="goals.js"></script>
+</body>
+</html>
